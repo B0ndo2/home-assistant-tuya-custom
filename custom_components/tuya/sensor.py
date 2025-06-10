@@ -525,12 +525,6 @@ SENSORS: dict[str, tuple[TuyaSensorEntityDescription, ...]] = {
             device_class=TuyaDeviceClass.WORK_STATE,
             entity_category=EntityCategory.DIAGNOSTIC,
         ),
-        TuyaSensorEntityDescription(
-            key=DPCode.WORK_STATE_2,
-            name="Work State 2",
-            device_class=TuyaDeviceClass.WORK_STATE,
-            entity_category=EntityCategory.DIAGNOSTIC,
-        ),        
         # Total seconds of irrigation. Read-write value; the device appears to ignore the write action (maybe firmware bug)
         TuyaSensorEntityDescription(
             key=DPCode.TIME_USE,
@@ -547,22 +541,6 @@ SENSORS: dict[str, tuple[TuyaSensorEntityDescription, ...]] = {
             device_class=TuyaDeviceClass.COUNTDOWN,
             entity_category=EntityCategory.DIAGNOSTIC,
         ),
-        # Total seconds of irrigation. Read-write value; the device appears to ignore the write action (maybe firmware bug)
-        TuyaSensorEntityDescription(
-            key=DPCode.TOTAL_WORK_TIME_2,
-            name="Total Watering Time 2",
-            icon="mdi:history",
-            state_class=SensorStateClass.TOTAL_INCREASING,
-            entity_category=EntityCategory.DIAGNOSTIC,
-        ),
-        # Number of seconds for the watering session. The device will automatically turn off after this time
-        TuyaSensorEntityDescription(
-            key=DPCode.COUNTDOWN_2,
-            name="Countdown 2",
-            icon="mdi:timer-outline",
-            device_class=TuyaDeviceClass.COUNTDOWN,
-            entity_category=EntityCategory.DIAGNOSTIC,
-        ),        
         *BATTERY_SENSORS,
     ),
      # Smart Water Timer2

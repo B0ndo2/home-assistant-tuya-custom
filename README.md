@@ -8,7 +8,7 @@ This code Home Assistanmt Core pull request and to allow quick additon of more d
 
 This was originally a fork of lasry1/home-assistant-tuya-custom (https://github.com/lasry1/home-assistant-tuya-custom). I bought a 2 valve timer and with the fork from lasry1 I was able to get only one valve to work.
 
-This requires some external steps to be completed in order to work
+This requires some external steps to be completed in order to work (up to step 5 only)
 
 see https://community.home-assistant.io/t/tuya-based-water-timer/899918/2
 
